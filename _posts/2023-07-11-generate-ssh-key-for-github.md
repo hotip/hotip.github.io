@@ -1,7 +1,6 @@
 ---
 title: Config tow GitHub account ssh key for on computer
 author: panxz
-date: 2019-08-08 11:33:00 +0800
 categories: [GitHub]
 tags: [git]
 pin: true
