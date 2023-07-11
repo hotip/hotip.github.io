@@ -40,3 +40,7 @@ Host personal
 ```
 
 4. Change GitHub project remote url from `git@github.com:xxx/xxx.git` to `personal:xxx/xxx.git` （or replace personal to work)
+
+---
+ref:
+[Stack Overflow](https://superuser.com/questions/232373/how-to-tell-git-which-private-key-to-use/1519694#1519694)
