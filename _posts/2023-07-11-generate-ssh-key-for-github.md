@@ -13,10 +13,30 @@ image:
   alt: Responsive rendering of Chirpy theme on multiple devices.
 ---
 
-1. generate private key and public key:
+If you have two GitHub account, and you want to use two account in one computer, you can follow the steps below:
+
+1. generate private key and public key for your accounts
 
 `ssh-keygen -t rsa`
 
+named "personal" and "work"
+
 2. config for you GitHub project
 
-copy publick key to https://github.com/settings/profile
+copy public keys to https://github.com/settings/profile
+
+3. config `~/.ssh/config`
+
+```bash
+Host work
+  HostName bitbucket.org
+  IdentityFile ~/.ssh/id_rsa_work
+  User git
+    
+Host personal
+  HostName bitbucket.org
+  IdentityFile ~/.ssh/id_rsa_personal
+  User git
+```
+
+4. Change GitHub project remote url from `git@github.com:xxx/xxx.git` to `personal:xxx/xxx.git` （or replace personal to work)
